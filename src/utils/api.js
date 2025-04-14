@@ -41,6 +41,11 @@ export function nerextract(data) {
   return axios.post('/ner', data);
 }
 
+export function parseauthororg(data) {
+  return axios.post('/parse-author-org', data);
+}
+
+
 
 // //结果数据集
 // export function getDatasetName_result() {

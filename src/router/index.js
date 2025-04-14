@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import EventExtraction from '../views/EventExtraction.vue'
 import EventStoryLine from '../views/EventStoryLine.vue'
 import NER from '../views/NER.vue'
+import AuthorOrgExtraction from '../views/AuthorOrgExtraction.vue'
 
 const routes = [
   {
@@ -29,6 +30,12 @@ const routes = [
         name: "/NER",
         component: NER,
         meta: { breadcrumb: "命名实体识别" },
+      },
+      {
+        path: "/authororgextraction",
+        name: "/authororgextraction",
+        component: AuthorOrgExtraction,
+        meta: { breadcrumb: "作者机构抽取" },
       }
     ]
   }

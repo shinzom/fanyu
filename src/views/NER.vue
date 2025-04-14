@@ -55,12 +55,16 @@ export default {
     },
     methods: {
         getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
+            const getBrightComponent = () => {
+                // 生成一个高于 128 的分量，范围大约在 128 - 255 之间
+                return Math.floor(Math.random() * 128) + 128;
+            };
+
+            const r = getBrightComponent();
+            const g = getBrightComponent();
+            const b = getBrightComponent();
+
+            return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
         },
         handleBeforeUpload(file) {
             const reader = new FileReader();
