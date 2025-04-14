@@ -37,6 +37,11 @@ export function getstoryline(data) {
   })
 }
 
+export function nerextract(data) {
+  return axios.post('/ner', data);
+}
+
+
 // //结果数据集
 // export function getDatasetName_result() {
 //   console.log('getDatasetName_result_api')

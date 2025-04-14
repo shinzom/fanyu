@@ -28,6 +28,11 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/navy/, ''),
       },
+      '/ner': {
+        target: 'http://10.109.246.132:8001', // 或者换成你服务真实地址
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/ner/, '/api/v1/ner'), // 👈 将前缀重写成真实路径
+      }
     },
   },
 });

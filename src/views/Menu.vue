@@ -43,6 +43,16 @@
             </el-icon>
             <template #title>事件脉络分析</template>
         </el-menu-item>
+        <el-menu-item index="/ner">
+              <el-icon>
+                <svg t="1743069876543" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="9999" width="128" height="128">
+                  <path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64z m0 820.2c-205.6 0-372.2-166.6-372.2-372.2S306.4 139.8 512 139.8 884.2 306.4 884.2 512 717.6 884.2 512 884.2z" fill="#ffffff"></path>
+                  <path d="M682.7 341.3c-25-25-65.5-25-90.5 0L512 421.5 431.8 341.3c-25-25-65.5-25-90.5 0s-25 65.5 0 90.5l80.2 80.2-80.2 80.2c-25 25-25 65.5 0 90.5s65.5 25 90.5 0L512 602.5l80.2 80.2c25 25 65.5 25 90.5 0s25-65.5 0-90.5L602.5 512l80.2-80.2c25-25 25-65.5 0-90.5z" fill="#ffffff"></path>
+                </svg>
+              </el-icon>
+              <template #title>命名实体识别</template>
+        </el-menu-item>
     </el-menu>
 </template>
     

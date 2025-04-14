@@ -3,6 +3,7 @@ import { createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import EventExtraction from '../views/EventExtraction.vue'
 import EventStoryLine from '../views/EventStoryLine.vue'
+import NER from '../views/NER.vue'
 
 const routes = [
   {
@@ -22,6 +23,12 @@ const routes = [
         name: "/eventstoryline",
         component: EventStoryLine,
         meta: { breadcrumb: "事件脉络分析" },
+      },
+      {
+        path: "/NER",
+        name: "/NER",
+        component: NER,
+        meta: { breadcrumb: "命名实体识别" },
       }
     ]
   }
