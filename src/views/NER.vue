@@ -9,12 +9,6 @@
                 <el-button type="info" style="width: 110px; margin-left: 20px; border-radius: 12px" @click="resetpage">
                     重<span v-html="'\u00a0\u00a0\u00a0\u00a0'" />置
                 </el-button>
-                <div style="float: right">
-                    <el-upload class="upload-demo" action="" :limit="1" :before-upload="handleBeforeUpload"
-                        style="width: 170px" accept=".txt">
-                        <el-button round style="width: 150px">文件读取</el-button>
-                    </el-upload>
-                </div>
             </div>
 
             <div id="textarea" style="margin-top: 2vh">
