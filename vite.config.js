@@ -19,7 +19,7 @@ export default defineConfig({
       '/parse-author-org': {
         target: 'http://10.109.246.132:5078',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/parse-author-org/, '/api/v1/parse/'),
+        rewrite: (path) => path.replace(/^\/parse-author-org/, '/api/v1/parse/'), // 末尾加斜杠
       },
       "/api": {
         target: "http://10.109.246.222:3333",
