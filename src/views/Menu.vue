@@ -55,7 +55,6 @@
         </el-menu-item>
         <el-menu-item index="/authororgextraction">
   <el-icon>
-    <!-- 你可以换任何你喜欢的图标，这里用了一个文档风格图标 -->
     <svg t="1743088888888" class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="128" height="128">
       <path d="M832 64H192a64 64 0 0 0-64 64v768a64 64 0 0 0 64 64h640a64 64 0 0 0 64-64V128a64 64 0 0 0-64-64zM736 832H288v-64h448v64z m0-128H288v-64h448v64z m0-128H288v-64h448v64z" fill="#ffffff" />
     </svg>
