@@ -16,6 +16,11 @@ export default defineConfig({
     host: "localhost",
     port: 5174,
     proxy: {
+      '/parse-author-org': {
+        target: 'http://10.109.246.132:5078',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/parse-author-org/, '/api/v1/parse/'), // 末尾加斜杠
+      },
       "/api": {
         target: "http://10.109.246.222:3333",
         // secure: false, //如果是https接口，如要配置此参数
@@ -27,6 +32,11 @@ export default defineConfig({
         // target: "http://10.109.246.222:8000",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/navy/, ''),
+      },
+      '/ner': {
+        target: 'http://10.109.246.132:8001', // 或者换成你服务真实地址
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/ner/, '/api/v1/ner'), // 👈 将前缀重写成真实路径
       },
     },
   },
